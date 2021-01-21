@@ -100,7 +100,7 @@ function movement(){
     if(ball.X < 0){
         if(ball.Y > player.paddle1Y && ball.Y < player.paddle1Y + player.paddleHeight){
             ball.speedX = -ball.speedX
-//
+
             var deltaY = ball.Y - (player.paddle1Y + player.paddleHeight/2);
             ball.speedY = deltaY * 0.35;
         } else {
